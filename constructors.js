@@ -1,7 +1,8 @@
 class Trainer {
 	constructor() {
 		this.myPokemon = {}
-		this.name = "" 
+		this.name = ""
+		this.pokemonArray = []
 	}
 }
 
