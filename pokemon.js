@@ -37,8 +37,7 @@ function initializePokemon(trainer, pokemonArray) {
                         initializePokemon(david, davidPokemon)
                     }
                     if(globalCounter === 6){
-                        renderPokemon(olga)
-                        renderPokemon(david)
+                        renderPage(olga, david);
 
                         // end the preloader
                     }
