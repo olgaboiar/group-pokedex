@@ -27,8 +27,8 @@ function initializePokemon(trainer, pokemonArray) {
 					trainer.myPokemon[pokemon] = new Pokemon(data)
                     localCounter++
                     globalCounter++
-                  
-					if (localCounter === 3) {
+                    
+                    if (localCounter === 3) {
                         localStorage.setItem(`${trainer.name}.myPokemon`, JSON.stringify(trainer.myPokemon));
                         console.log(`${trainer.name}.myPokemon`)
                         console.log(trainer.myPokemon)
