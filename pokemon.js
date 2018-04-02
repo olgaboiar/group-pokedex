@@ -33,7 +33,10 @@ function initializePokemon(trainer, pokemonArray) {
                         console.log(`${trainer.name}.myPokemon`)
                         console.log(trainer.myPokemon)
                     }
-                     if(globalCounter === 6){
+                    if(globalCounter === 3){
+                        initializePokemon(david, davidPokemon)
+                    }
+                    if(globalCounter === 6){
                         renderPokemon(olga)
                         renderPokemon(david)
 
@@ -56,7 +59,6 @@ function setUpPokemon(){
         //end the preloader
     } else {
         console.log("no local")
-        initializePokemon(david, davidPokemon)
         initializePokemon(olga, olgaPokemon)
     }
 }
