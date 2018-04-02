@@ -18,21 +18,25 @@ davidPokemon = [
 let globalCounter = 0
 
 function initializePokemon(trainer, pokemonArray) {
-    let counter = 0
+    let localCounter = 0
 
 		pokemonArray.forEach(function (pokemon) {
 			$.ajax({
 				url: `https://pokeapi.co/api/v2/pokemon/${pokemon}`,
 				success: function (data) {
 					trainer.myPokemon[pokemon] = new Pokemon(data)
-                    counter++
+                    localCounter++
+                    globalCounter++
                   
-					if (counter === 3) {
+					if (localCounter === 3) {
                         localStorage.setItem(`${trainer.name}.myPokemon`, JSON.stringify(trainer.myPokemon));
                         console.log(`${trainer.name}.myPokemon`)
                         console.log(trainer.myPokemon)
                     }
-                     if(globalCounter === 6){
+                    if(globalCounter === 3){
+                        initializePokemon(david, davidPokemon)
+                    }
+                    if(globalCounter === 6){
                         renderPokemon(olga)
                         renderPokemon(david)
 
@@ -55,7 +59,6 @@ function setUpPokemon(){
         //end the preloader
     } else {
         console.log("no local")
-        initializePokemon(david, davidPokemon)
         initializePokemon(olga, olgaPokemon)
     }
 }
