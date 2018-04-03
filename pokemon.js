@@ -53,6 +53,7 @@ function setUpPokemon(){
         console.log("local")
         olga.myPokemon = JSON.parse(localStorage.getItem(`olga.myPokemon`))
         david.myPokemon = JSON.parse(localStorage.getItem(`david.myPokemon`))
+        console.log(olga)
         
         renderPage(olga, david);
         //end the preloader
