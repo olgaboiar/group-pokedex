@@ -1,0 +1,60 @@
+.moveLeft {
+    animation: moveLeft .75s forwards ease-in;
+  }
+
+.moveRight{
+    animation: moveRight .75s forwards ease-in;
+}
+  
+.yAxis {
+    animation: yAxis .75s forwards ease-out;
+  }
+
+  #pokemonImg1{
+    animation: grow .75s forwards;
+  }
+
+  #pokemonImg2{
+    animation: grow .75s forwards;
+  }
+
+  #pokemon2{
+      justify-self: end;
+  }
+
+@keyframes moveLeft {
+    0% {
+        animation-timing-function: ease-in;
+        transform: translateX(150px);
+      }
+    100% {
+      animation-timing-function: ease-in;
+      transform: translateX(-150px);
+    }
+  }
+
+  @keyframes moveRight {
+    0% {
+        animation-timing-function: ease-in;
+        transform: translateX(-300px);
+      }
+    100% {
+      animation-timing-function: ease-in;
+      transform: translateX(150px);
+    }
+  }
+  
+  @keyframes yAxis {
+    100% {
+      animation-timing-function: ease-out;
+      transform: translateY(300px);
+    }
+  }
+
+  @keyframes grow {
+    100% {
+      animation-timing-function: ease-out;
+      transform: scale(3);
+    }
+  }
+  
