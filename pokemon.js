@@ -38,7 +38,6 @@ function initializePokemon(trainer) {
                     }
                     if(globalCounter === 6){
                         renderPage(olga, david);
-                        console.log("test2");
 
                         // end the preloader
                     }
