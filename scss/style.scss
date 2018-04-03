@@ -1,1 +1,14 @@
 @import "partials/main";
+
+.pokemon-link.btn-large {
+	width: 90px;
+	height: 90px;
+	background: linear-gradient(#ffcdd2, #ef9a9a);
+}
+
+.pokemon-icons {
+	padding-top: 30px;
+	img {
+		max-width: 100%;
+  }
+}

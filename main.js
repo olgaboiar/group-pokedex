@@ -11,7 +11,6 @@ function renderPage(trainer1, trainer2) {
 function renderIcons(trainer) {
 
 	for(i=0; i<trainer.pokemonArray.length; i++) {
-		console.log("test");
 		let thisPokemon = trainer.pokemonArray[i]
 		let $pokemonLinkTag = $('<a id="pokemon-' + trainer.myPokemon[thisPokemon].name + '" class="btn-floating btn-large waves-effect waves-light pokemon-link"><img id="pokemon-icon-' + trainer.myPokemon[thisPokemon].name + '" src="' + trainer.myPokemon[thisPokemon].frontImg + '">"</a>');
 		let $pokemonIconTag = $('<div class="col s12 m4 center-align pokemon-icon"/>').append($pokemonLinkTag);
