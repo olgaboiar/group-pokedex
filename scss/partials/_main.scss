@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 3fr 3fr 1fr 3fr 3fr;
     grid-template-rows: 5fr 1fr;
-    grid-template-areas: "trainer1 pokemon1 . pokemon2 trainer2" "icons1 . . . icons2";
+    grid-template-areas: "trainer1 pokemon1 . pokemon2 trainer2" "icons1 pokemonInfo1 . pokemonInfo2 icons2";
     max-width: 100%;
     max-height: 100%;
     overflow: hidden;
@@ -57,4 +57,17 @@
     img{
         max-width: 100%;
     };
+
 }
+
+ #pokemon-info-1 {
+      grid-area: pokemonInfo1;
+    }
+
+    #pokemon-info-2 {
+      grid-area: pokemonInfo2;
+    }
+
+    .statHeading {
+      font-weight: 700;
+    }
