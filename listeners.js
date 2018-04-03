@@ -1,9 +1,11 @@
-
+console.log("listeners connected")
 
 $(".pokemon-link").on("click", function(e){
     let parentClass = $(this).parent().parent().attr('class')
-    let area = ""
+    let thisPokemon = $(this).attr('id')
+    let area
     let trainer
+    
 
     if(/olga/.test(parentClass)){
         area = "1"
@@ -11,9 +13,10 @@ $(".pokemon-link").on("click", function(e){
     } else{
         area = "2"
         trainer = david
+        console.log(trainer)
     }
 
-    $('#gym').remove(`#pokemon${area}`)
-    $('#gym').append(`<div id="pokemon${area}"> <img src="${trainer.frontImg}" alt="pokemon${area}"> </div>`)
+    $(`#pokemon${area}`).html(`<img src="${trainer.myPokemon[thisPokemon].frontImg}" alt="pokemon${area}">`)
+     
 
 })
