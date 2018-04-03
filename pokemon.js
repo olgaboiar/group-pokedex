@@ -38,6 +38,7 @@ function initializePokemon(trainer) {
                     }
                     if(globalCounter === 6){
                         renderPage(olga, david);
+                        console.log("test2");
 
                         // end the preloader
                     }
@@ -53,8 +54,8 @@ function setUpPokemon(){
         console.log("local")
         olga.myPokemon = JSON.parse(localStorage.getItem(`olga.myPokemon`))
         david.myPokemon = JSON.parse(localStorage.getItem(`david.myPokemon`))
-        renderPokemon(olga)
-        renderPokemon(david)
+        
+        renderPage(olga, david);
         //end the preloader
     } else {
         console.log("no local")
