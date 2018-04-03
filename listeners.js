@@ -21,6 +21,16 @@ $(".pokemon-link").on("click", function(e){
     }
 
     $(`#pokemon${area}`).html(`<div class=${animationDirectionClass}><div class="yAxis"><img id="pokemonImg${area}" src="${trainer.myPokemon[thisPokemon].frontImg}" alt="pokemon${area}"></div></div>`)
+
+    $(`#pokemon-info-${area}`).html(`<div><span class="statHeading">hp</span>: ${trainer.myPokemon[thisPokemon].hp}</div><div><span class="statHeading">attack</span>: ${trainer.myPokemon[thisPokemon].attack}</div><div><span class="statHeading">defense</span>: ${trainer.myPokemon[thisPokemon].defense}</div><div><span class="statHeading">abilities</span>: <span id="abilities-${area}"></span></div>`)
+
+    trainer.myPokemon[thisPokemon].abilities.forEach(function(ability) {$(`#abilities-${area}`).append(ability + "    &nbsp;&nbsp;&nbsp;&nbsp;")})
+
+
+    //  $(`#pokemon-info-${area}`).html(`<div>HP: ${trainer.myPokemon[thisPokemon].hp}</div><div>Attack: ${trainer.myPokemon[thisPokemon].attack}</div><div>Defense: ${trainer.myPokemon[thisPokemon].defense}</div><div><ul id="abilityList"></ul></div>`)
+    // trainer.myPokemon[thisPokemon].abilities.forEach(function (ability) {
+    //     $('#abilityList').append(`<li>${ability}</li>`)
+    // })
      
 
 })
