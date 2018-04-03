@@ -26,11 +26,8 @@ $(".pokemon-link").on("click", function(e){
 
     trainer.myPokemon[thisPokemon].abilities.forEach(function(ability) {$(`#abilities-${area}`).append(ability + "    &nbsp;&nbsp;&nbsp;&nbsp;")})
 
+    $(`#pokemon-info-${area}`).show( "explode", {pieces: 16}, 6000 );
+    //$(`#pokemon-info-${area}`).toggle( "explode", {pieces: 16}, 750);
 
-    //  $(`#pokemon-info-${area}`).html(`<div>HP: ${trainer.myPokemon[thisPokemon].hp}</div><div>Attack: ${trainer.myPokemon[thisPokemon].attack}</div><div>Defense: ${trainer.myPokemon[thisPokemon].defense}</div><div><ul id="abilityList"></ul></div>`)
-    // trainer.myPokemon[thisPokemon].abilities.forEach(function (ability) {
-    //     $('#abilityList').append(`<li>${ability}</li>`)
-    // })
-     
 
 })
