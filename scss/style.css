@@ -6,29 +6,44 @@
   height: 1000px;
   max-width: 100%;
   max-height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .pokemon-link.btn-large {
   width: 90px;
   height: 90px;
-  background: linear-gradient(#ffcdd2, #ef9a9a); }
+  background: linear-gradient(#ffcdd2, #ef9a9a);
+}
 
 .pokemon-icons-olga {
-  padding-top: 30px; }
+  padding-top: 30px;
+}
 
 .pokemon-icons-olga img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 .pokemon-icons-david {
-  padding-top: 30px; }
+  padding-top: 30px;
+}
 
 .pokemon-icons-david img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 #icons1 {
-  grid-area: icons1; }
+  grid-area: icons1;
+}
 
 #icons2 {
-  grid-area: icons2; }
+  grid-area: icons2;
+}
 
+#pokemon1 {
+  grid-area: pokemon1;
+}
+
+#pokemon2 {
+  grid-area: pokemon2;
+}
 /*# sourceMappingURL=style.css.map */
