@@ -10,7 +10,7 @@
 .pokemon-link.btn-large {
   width: 90px;
   height: 90px;
-  background: linear-gradient(#ffcdd2, #ef9a9a); }
+  background: linear-gradient(red, #ef9a9a); }
 
 .pokemon-icons-olga {
   padding-top: 30px; }
