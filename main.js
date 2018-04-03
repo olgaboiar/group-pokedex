@@ -1,5 +1,7 @@
 console.log("connected")
 
+$("#header").lettering();
+
 function renderPage(trainer1, trainer2) {
 	console.log("123");
 	renderIcons(trainer1);
